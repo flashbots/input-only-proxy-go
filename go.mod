@@ -1,4 +1,4 @@
-module input-only-proxy
+module github.com/flashbots/input-only-proxy-go
 
 go 1.21
 

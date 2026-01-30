@@ -27,6 +27,10 @@ ssh-keygen -t ed25519 -f client-ssh -N ""
 
 # Convert to TLS cert/key pair
 go run ./ssh2cert/ client-ssh client-key.pem client-cert.pem
+
+# Or, without cloning:
+go run github.com/flashbots/input-only-proxy-go/ssh2cert@latest \
+    client-ssh client-key.pem client-cert.pem
 ```
 
 ### 2. Start the proxy
